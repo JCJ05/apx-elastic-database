@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<transaction xmlns="http://www.w3schools.com" transactionName="PGLUTSCM" application="PGLU" version="01" country="PE" language="ES">
+	<paramsIn>
+		<parameter order="1" name="customerId" mandatory="0" type="String" size="10" />
+	</paramsIn>
+	<paramsOut>
+		<dto order="1" name="CustomerDTO" mandatory="1" package="com.bbva.pglu.dto.elastic.customer.CustomerDTO" artifactId="PGLUCCCM">
+
+			<dto order="1" name="address_str" mandatory="0" package="com.bbva.pglu.dto.elastic.customer.AddressDTO" artifactId="PGLUCCM" >
+				<parameter order="1" name="cust_address_desc" mandatory = "0" type = "String" size="200" />
+			</dto>
+
+			<parameter order="2" name="audit_date" mandatory="0" type="String" size="20"/>
+			<parameter order="3" name="creation_date" mandatory="0" type="String" size="20" />
+			<parameter order="4" name="creation_user_id" mandatory="0" type="String" size="20"/>
+			<parameter order="5" name="customer_id" mandatory="0" type="String" size="20"/>
+			<parameter order="6" name="customer_last_name" mandatory="0" type="String" size="20" />
+			<parameter order="7" name="customer_leaving_date" mandatory="0" type="String" size="20" />
+			<parameter order="8" name="customer_name" mandatory="0" type="String" size="20"/>
+			<parameter order="9" name="user_audit_id" mandatory="0" type="String" size="20"/>
+			<parameter order="10" name="years_cust_age_number" mandatory="0" type="String" size="20"/>
+
+		</dto>
+	</paramsOut>
+	<description>Search Customer</description>
+</transaction>
